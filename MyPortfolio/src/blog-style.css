@@ -1,0 +1,23 @@
+h1 {
+    color: aqua;
+    width: 60%;
+    margin: 5%;
+}
+body {
+    background-color: rgb(139, 196, 41)
+}
+main {
+    background-color: bisque;
+    width: 60%;
+    margin: 5%;
+}
+
+article {
+    margin: 1%;
+    border: solid gray 2px;
+
+}
+
+article:hover {
+    background-color: cadetblue;
+}
