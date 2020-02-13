@@ -51,6 +51,12 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    @media all and (max-width:30em){
+       a.button2{
+        display:block;
+        margin:0.4em auto;
+       }
+      }
   }
   
   #profile-pic {
@@ -89,7 +95,3 @@ body {
     color: rgb(36, 99, 172);
     letter-spacing: 16px;
     font-style: italic;
-  }
-  @media (min-width: 320px) {
-
-  }
