@@ -1,4 +1,12 @@
 html, body, .grid-container { height: 100%; margin: 0; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1533387520709-752d83de3630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+  }
 
 .grid-container * { 
  border: 1px solid red;
@@ -14,7 +22,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1.2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-template-rows: 0.3fr 0.3fr 0.6fr 0.7fr 0.7fr 3.4fr 1fr;
   grid-template-areas: "weather . ." "weather . ." ". quote ." ". time ." ". greeting ." "todolist date calculator" "footer footer footer";
 }
@@ -29,6 +37,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 
 .time { 
     grid-area: time; 
+    
 }
 
 .greeting { 
@@ -44,7 +53,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 }
 
 .calculator { 
-    grid-area: calculator;  
+    grid-area: calculator;
 }
 
 .footer { 
