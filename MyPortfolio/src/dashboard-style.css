@@ -126,7 +126,7 @@ html {
   }
   
   .calculator-keys {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
