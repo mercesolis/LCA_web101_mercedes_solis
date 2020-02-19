@@ -1,5 +1,7 @@
 html, body, .grid-container { height: 100%; margin: 0; }
 
+
+
 .grid-container * { 
  border: 1px solid red;
  position: relative;
@@ -131,3 +133,21 @@ html {
     grid-gap: 20px;
     padding: 20px;
   }
+  
+  @media (min-width: 720px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'menu footer footer footer right right';
+      grid-gap: 10px;
+      background-color: rgb(47, 75, 97);
+      padding: 10px;
+    }
+    
+  }
+  }
+
+
+    

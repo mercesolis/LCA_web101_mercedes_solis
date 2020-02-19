@@ -60,6 +60,7 @@ body {
     margin: 15% auto;
     grid-column: 2/3;
   }
+
   
   h1 {
     color:black (0, 0, 0);
@@ -91,5 +92,22 @@ body {
     font-style: italic;
   }
   @media (min-width: 320px) {
+    #profile-pic {
+      width: 200px;
+      height: 275px;
+      border-radius: 50%;
+      margin: 15% auto;
+      grid-column: 2/3;
+    }
+
+    @media (min-width: 720px) {
+      #profile-pic {
+        width: 400px;
+        height: 520px;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 2/3;
+      }
+    }
 
   }
