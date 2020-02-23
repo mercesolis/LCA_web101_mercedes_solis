@@ -90,6 +90,20 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+  
   @media (min-width: 320px) {
+    #profile-pic {
+      width: 200px;
+    height: 260px;
+    }
+
+  }
+
+
+  @media (min-width: 550px) {
+    #profile-pic {
+      width: 400px;
+    height: 560px;
+    }
 
   }
