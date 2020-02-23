@@ -218,7 +218,7 @@ p a:hover {
 	display: block;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100;
 }
 #body #featured div {
 	left: 50%;
@@ -289,7 +289,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body > ul li a img {
-	border: 2px solid #1a1a1a;
+	border: 7px solid #1a1a1a;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -410,6 +410,7 @@ p a:hover {
 }
 
 
-@media (min-width: 320px) {
-
-}
+.flex-container {
+    display: flex;
+    flex-flow: wrap
+  }
