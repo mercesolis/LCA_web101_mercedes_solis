@@ -1,53 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./dashboard-style.css">
+<style>
+    body {
+     background-image: urlhttps://images.unsplash.com/photo-1533387520709-752d83de3630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
+</style>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer right right';
+  grid-gap: 10px;
+  background-color: rgb(45, 77, 102);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
-        <div class="grid-container">
-                <div class="weather"></div>
-                <div class="quote"></div>
-                <div class="time"></div>
-                <div class="greeting"></div>
-                <div class="todolist"></div>
-                <div class="date"></div>
-                <div class="calculator"></div>
-                <input type="text" class="calculator-screen" value="0" disabled />
+
+<h1></h1>
+
+<p></p>
+
+<div class="grid-container">
+  <div class="item1">good morning, sunshine!</div>
+  <div class="item2">Work Groceries Homework </div>
+  <div class="item3">
+        <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+        </head>
+        
+        <body onload="startTime()">
+        
+        <div id="txt"></div>
+        </div>
+        </body>
+        </html>
+        
   
-  <div class="calculator-keys">
-    <button type="button" class="operator" value="+">+</button>
-    <button type="button" class="operator" value="-">-</button>
-    <button type="button" class="operator" value="*">&times;</button>
-    <button type="button" class="operator" value="/">&divide;</button>
+  <div class="item4">
 
-    <button type="button" value="7">7</button>
-    <button type="button" value="8">8</button>
-    <button type="button" value="9">9</button>
-
-
-    <button type="button" value="4">4</button>
-    <button type="button" value="5">5</button>
-    <button type="button" value="6">6</button>
-
-
-    <button type="button" value="1">1</button>
-    <button type="button" value="2">2</button>
-    <button type="button" value="3">3</button>
-
-
-    <button type="button" value="0">0</button>
-    <button type="button" class="decimal" value=".">.</button>
-    <button type="button" class="all-clear" value="all-clear">AC</button>
-
-    <button type="button" class="equal-sign" value="=">=</button>
-
+        <input type="text" class="calculator-screen" value="0" disabled />
+        
+        <div class="calculator-keys">
+          
+          <button type="button" class="operator" value="+">+</button>
+          <button type="button" class="operator" value="-">-</button>
+          <button type="button" class="operator" value="*">&times;</button>
+          <button type="button" class="operator" value="/">&divide;</button>
+      
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+      
+      
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+      
+      
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+      
+      
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign" value="=">=</button>
+      
+        </div>
+      </div>
+  
+  <div class="item5">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-days="3" data-theme="sky" >NEW YORK WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
 </div>
-    <div class="footer"></div>
 
 </body>
 </html>
