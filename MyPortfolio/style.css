@@ -99,9 +99,22 @@ body {
 <<<<<<< HEAD
 =======
   }
+  
   @media (min-width: 320px) {
     #profile-pic {
       width: 200px;
+<<<<<<< HEAD
+    height: 260px;
+    }
+
+  }
+
+
+  @media (min-width: 550px) {
+    #profile-pic {
+      width: 400px;
+    height: 560px;
+=======
       height: 275px;
       border-radius: 50%;
       margin: 15% auto;
@@ -116,6 +129,7 @@ body {
         margin: 15% auto;
         grid-column: 2/3;
       }
+>>>>>>> master
     }
 
   }
