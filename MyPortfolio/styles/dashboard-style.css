@@ -23,7 +23,7 @@ body {
 }
 
 .grid-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-template-rows: 0.3fr 0.3fr 0.6fr 0.7fr 0.7fr 3.4fr 1fr;
   grid-template-areas: "weather . ." "weather . ." ". quote ." ". time ." ". greeting ." "todolist date calculator" "footer footer footer";
@@ -137,26 +137,9 @@ html {
   }
   
   .calculator-keys {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
   }
   
-  @media (min-width: 720px) {
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header header header header'
-        'main main main main main main'
-        'menu footer footer footer right right';
-      grid-gap: 10px;
-      background-color: rgb(47, 75, 97);
-      padding: 10px;
-    }
-    
-  }
-  }
-
-
-    
