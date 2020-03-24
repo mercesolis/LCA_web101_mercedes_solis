@@ -96,15 +96,12 @@ body {
     color: rgb(36, 99, 172);
     letter-spacing: 16px;
     font-style: italic;
-<<<<<<< HEAD
-=======
-  }
+}
   
   @media (min-width: 320px) {
     #profile-pic {
       width: 200px;
-<<<<<<< HEAD
-    height: 260px;
+      height: 260px;
     }
 
   }
@@ -114,7 +111,7 @@ body {
     #profile-pic {
       width: 400px;
     height: 560px;
-=======
+
       height: 275px;
       border-radius: 50%;
       margin: 15% auto;
@@ -128,9 +125,3 @@ body {
         border-radius: 50%;
         margin: 15% auto;
         grid-column: 2/3;
-      }
->>>>>>> master
-    }
-
-  }
->>>>>>> dashboard
